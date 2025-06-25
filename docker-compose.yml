@@ -1,0 +1,9 @@
+services:
+  dev:
+    image: webdev:1.0
+    container_name: webdev
+    volumes:
+      - ${HOME}/.config/nvim/:/home/dev/.config/nvim
+      - ${HOME}/development/web/boriko/:/home/dev/boriko
+      - ${HOME}/.ssh/:/home/dev/.ssh
+    command: tail -f /dev/null
