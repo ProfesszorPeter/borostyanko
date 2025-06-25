@@ -4,6 +4,6 @@ services:
     container_name: webdev
     volumes:
       - ${HOME}/.config/nvim/:/home/dev/.config/nvim
-      - ${HOME}/development/web/boriko/:/home/dev/boriko
+      - ${HOME}/development/web/borostyanko/:/home/dev/deploy
       - ${HOME}/.ssh/:/home/dev/.ssh
     command: tail -f /dev/null
