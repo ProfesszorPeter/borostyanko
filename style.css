@@ -1,15 +1,39 @@
-body {
-    font-size:22px;
+/*Rájöttem hogy egyenlőre nincs szükség a TailwindCSS nyújtotta ügysségekre.
+ * szóval elkezdtem sima css classokat írni.
+ * a docker file-t meg majd kitalálom, hogy hogyan legyen*/
+body{
+    background-color: #ffbc37;
 }
 
-p {
-    color: purple;
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #640e0d;
+  overflow: hidden;
+  border: double #640e0d;
+  outline-style: solid;
+  outline-color: #ffbc37;
+  outline-offset: -5px;
+  outline-width: 0.5px;
 }
 
-.gray{
-    color:gray;
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-#masodik {
-    font-style: italic;
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ffbc37;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #ffbc37;
+  color: white;
 }
