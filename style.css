@@ -5,6 +5,10 @@ body{
     background-color: #ffbc37;
 }
 
+p{
+    padding: 2rem;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #640e0d;
@@ -35,5 +39,5 @@ body{
 /* Add a color to the active/current link */
 .topnav a.active {
   background-color: #ffbc37;
-  color: white;
-}
+  color: #640e0d;
+  }
