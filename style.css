@@ -4,9 +4,11 @@
 body{
     background-color: #ffbc37;
 }
+.left{
+    float: left;
+    color: #ffbc37;
 
-p{
-    padding: 2rem;
+
 }
 
 /* Add a black background color to the top navigation */
@@ -33,7 +35,7 @@ p{
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ffbc37;
-  color: black;
+  color: #640e0d;
 }
 
 /* Add a color to the active/current link */
