@@ -1,9 +1,5 @@
 FROM alpine
 
-#ARG HOME
-#
-#ENV HOME=${HOME}
-
 RUN apk update && apk upgrade
 
 RUN apk add npm openssh-client
@@ -11,7 +7,8 @@ RUN apk add npm openssh-client
 RUN apk add neovim git make gcc curl krb5-libs icu-libs openssl-libs-static zlib zip diffutils wget musl-dev 
 
 RUN adduser dev -D 
-# h $HOME
+
+RUN mkdir -p /home/dev/.config/nvim
 
 USER dev
 

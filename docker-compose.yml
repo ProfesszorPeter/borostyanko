@@ -5,5 +5,4 @@ services:
     volumes:
       - ${HOME}/.config/nvim/:/home/dev/.config/nvim
       - ${HOME}/development/web/borostyanko/:/home/dev/boriko
-      - ${HOME}/.ssh/:/home/dev/.ssh
     command: tail -f /dev/null
